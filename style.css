@@ -13,8 +13,7 @@ body {
     
 }
 header {
-    margin-bottom: 1em;
-
+    margin: 0 1em;
 }
 a,
 button {
@@ -372,13 +371,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -443,7 +435,10 @@ nav .caret {
     margin: 6px -5px 0 0!important;
     float: right;
 }
-
+.img-responsive {
+    height: auto;
+    width: 100%;
+}
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -514,11 +509,20 @@ button {
     border-radius: 0 0 29px 29px;
 }
 
+textarea.form-control {
+    height: auto;
+}
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    width: 100%;
+    max-width: 30em;
+    height: 2em;
 }
 
+.form-group {
+    margin-top: 1em;
+}
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -709,8 +713,14 @@ p {
 }
 
 .social {
+    display: flex;
     max-width: 400px;
     margin: auto auto auto auto;
+}
+@media screen and (max-width:400px) {
+    .social {
+        flex-direction: column;
+    }    
 }
 
 h2 {
@@ -784,7 +794,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -931,6 +941,7 @@ h4 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        list-style-type: none;
     }
     .nav > li {
         margin-top: 0;
