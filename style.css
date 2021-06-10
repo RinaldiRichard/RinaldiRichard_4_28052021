@@ -6,7 +6,16 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width:700px) {
+    body {
+        padding: 0 1em;
+    }
+    
+}
+header {
+    margin-bottom: 1em;
 
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -677,7 +686,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -822,7 +831,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/images-compressées/image-de-presentation-jpeg-min.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1048,8 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+.image-resize-mode {
+    width: 8em;
+    max-width: 100px;
 }
