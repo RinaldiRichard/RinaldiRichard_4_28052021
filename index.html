@@ -5,8 +5,9 @@
     <meta name="keywords" content="La chouette agence, agence web design, création site web, web design, Lyon, illustrations">
     <meta name="description" content="La Chouette agence est une entreprise de web design basée à lyon qui aide ses clients à réaliser ses futurs projets ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
- 	
+ 
 	<link rel="icon" type="image/png" sizes="16x16"  href="./favicon.jpg">
+	<link rel="preload" as="font">
 	<link rel="preload" href="style.css" as="style">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -133,6 +134,10 @@
 </div>
 <!-- bloc-2-services END -->
 
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
+
 <!-- bloc-3-what-i-do -->
 <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
@@ -160,7 +165,7 @@
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/images-compressées/1-min.jpg" alt="Refonte d'un site web pour un journal local" class="img-responsive portfolio-thumb" /></a>
+				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="img/images-compressées/1-minbis.jpg" alt="Refonte d'un site web pour un journal local" class="img-responsive portfolio-thumb" /></a>
 				<h3 class="mg-md text-center">
 					Refonte d'un site web pour un journal local
 				</h3>
@@ -169,7 +174,7 @@
 				</p>
 			</div>
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/images-compressées/2-min.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour photographes" /></a>
+				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="img/images-compressées/2-minbis.jpg" class="img-responsive portfolio-thumb" alt="Création d'un site web pour photographes" /></a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
 				</h3>
@@ -269,11 +274,11 @@
 
 </div>
 <!-- Principal conteneur END -->
-<script src="./js/jquery-2.1.0.js" ></script>
+<script src="./js/jquery-2.1.0.js"></script>
 <script src="./js/bootstrap.js" defer></script>
-<script src="./js/blocs.js" ></script>
+<script src="./js/blocs.js"></script>
 <script src="./js/jquery.touchSwipe.js" defer></script>
-<script src="./js/gmaps.js" ></script>
+<script src="./js/gmaps.js"></script>
 
 </body>
 </html>
