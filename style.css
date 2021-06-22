@@ -326,9 +326,9 @@ a:hover {
 
 .navbar .nav {
     padding-top: 1em;
-    margin-right: -10em;
     float: right;
     z-index: 1;
+    flex: 1;
 }
 
 .nav > li {
@@ -669,7 +669,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #0c0c0c!important;
 }
 
 .container {
@@ -760,7 +760,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #333333!important;
 }
 
 .portfolio-thumb {
@@ -872,13 +872,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
