@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
+    
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -286,15 +285,6 @@ a:hover {
     margin-left: 0;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -439,6 +429,7 @@ nav .caret {
 .img-responsive {
     height: auto;
     max-width: 100%;
+    width: 100%;
 }
 
 .mg-md {
@@ -447,7 +438,7 @@ nav .caret {
 }
 
 .navbar-header {
-    display: flex;
+    display: block;
 }
 .mg-lg {
     margin-top: 10px;
@@ -704,7 +695,6 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
     font-family: "Open Sans";
 }
 
@@ -721,15 +711,11 @@ p {
     display: flex;
     max-width: 400px;
     margin: auto auto auto auto;
-}
-@media screen and (max-width:400px) {
-    .social {
-        flex-direction: column;
-    }    
+    width: fit-content;
 }
 
+
 h2 {
-    font-size: 22px;
     line-height: 1.4em;
 }
 
@@ -804,7 +790,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #333333!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1063,4 +1049,7 @@ h4 {
 .image-resize-mode {
     width: 8em;
     max-width: 100px;
+}
+.container {
+    width: auto !important;
 }
